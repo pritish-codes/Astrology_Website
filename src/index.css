@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom glow animation for important elements */
+@keyframes subtle-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 8px rgba(217, 119, 6, 0.2));
+  }
+  50% {
+    filter: drop-shadow(0 0 12px rgba(217, 119, 6, 0.3));
+  }
+}
+
+.animate-glow {
+  animation: subtle-glow 3s infinite;
+}
